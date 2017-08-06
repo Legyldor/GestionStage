@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SGSv2.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+    <!-------------------------------------------------------->
+    <!-- ce qui suit est nécessaire pour utiliser metro UI, -->
+    <!-- c'est commun pour toutes les pages du site -->
+    <!-- (voir http://metroui.org.ua/) -->
+    <!-------------------------------------------------------->
+    <link rel="stylesheet" href="/Includes/css/metro-bootstrap.css" />
+    <link rel="stylesheet" href="/Includes/css/iconFont.min.css" />
+    <link rel="stylesheet" href="/MonStyle.css" />
+    <script src="/Includes/js/jquery/jquery.min.js"></script>
+    <script src="/Includes/js/jquery/jquery-ui.min.js"></script>
+    <script src="/Includes/js/metro/metro.min.js"></script>
+    <script src="/Includes/js/metro/metro-datepicker.js"></script>
+    <script src="/Includes/js/metro/metro-calendar.js"></script>
+
+    <!-------------------------------------------------------->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body class="metro">
+    <!-- Menu supérieur  -->
+    <nav class="navigation-bar dark">
+        <nav class="navigation-bar-content">
+            <a href="/Default.aspx" class="element">
+                <span class="icon-grid-view"></span>
+                SGSv2
+            </a>
+            <span class="element-divider place-left"></span>
+            <a href="/Connexion/Connexion.aspx" class="element image-button image-left place-right">
+                <asp:Label ID="lbConnectezVous" runat="server" Text=""></asp:Label>
+            </a>
+        </nav>
+    </nav>
+
+    <!-- Menu latéral  -->
+    <div id="sidebar">
+        <nav class="sidebar">
+            <ul>
+                <li class="active"><a href="/Default.aspx"><i class="icon-home"></i>Page d'acceuil</a></li>
+                <li id="about" runat="server"><a href="/About.aspx">A propos</a></li>
+                <!-- Gestion -->
+                <li class="title" id="titreGestion" runat="server">Gestion</li>
+                <li id="gestionUtil" runat="server"><a href="/Privée/GestionUtilisateur/GestionUtilisateur.aspx">Gestion des utilisateurs</a></li>
+                <li id="gestionStage" runat="server"><a href="/Privée/Stage/GestionStage.aspx">Gestion des stages</a></li>
+                <li id="gestionEntreprise" runat="server"><a href="/Privée/Entreprise/GestionEntreprise.aspx">Gestion des entreprises</a></li>
+                <li id="gestionCritere" runat="server" ><a href="/Privée/Entreprise/GestionCriteres.aspx">Gestion des critères</a></li>
+                <!-- Etudiant -->
+                <li class="title" id="titreEtudiant" runat="server">Etudiant</li>
+                <li id="interfEtudiant" runat="server"><a href="/Privée/Etudiant/InterfaceEtudiant.aspx">Interface Etudiant</a></li>
+                <!-- Entreprise -->
+                <li class="title" id="titreEntreprise" runat="server">Entreprise</li>
+                <li id="evalStagiaire" runat="server"><a href="/Privée/Entreprise/EvaluationStagiaire.aspx">Evaluation du stagiaire</a></li>
+                <li id="InterfaceEntreprise" runat="server"><a href="/Privée/Entreprise/InterfaceEntreprise.aspx">Interface entreprise</a></li>
+                <!-- Enseignant -->
+                <li class="title" id="titreEnseignant" runat="server">Enseignant</li>
+                <li id="interfEnseignant" runat="server"><a href="/Privée/Enseignant/InterfaceEnseignant.aspx">Interface Enseignant</a></li>
+                
+
+                <!-- Ajout d'un lien sur le menu -->
+                <!-- Ne pas oublier de mettre un id pour pouvoir cacher ce lien -->
+            </ul>
+        </nav>
+    </div>
+
+    <form id="form1" runat="server">
+
+        <div id="MainContent" class="bg-gray">
+            <asp:ContentPlaceHolder ID="maincontent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <asp:Label ID="js" runat="server" Text=""></asp:Label>
+</body>
+</html>

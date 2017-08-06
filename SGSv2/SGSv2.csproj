@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A897E468-C124-4702-A5FA-42B717676289}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGSv2</RootNamespace>
+    <AssemblyName>SGSv2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Connexion\Connexion.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Privée\Enseignant\InterfaceEnseignant.aspx" />
+    <Content Include="Privée\Entreprise\EvaluationStagiaire.aspx" />
+    <Content Include="Privée\Entreprise\EvaluationStagiaireSuperviseur.aspx" />
+    <Content Include="Privée\Entreprise\EvaluationStagiaireSuperviseurPR.aspx" />
+    <Content Include="Privée\Entreprise\GestionCriteres.aspx" />
+    <Content Include="Privée\Entreprise\InterfaceEntreprise.aspx" />
+    <Content Include="Privée\Etudiant\InterfaceEtudiant.aspx" />
+    <Content Include="Privée\Stage\GestionStage.aspx" />
+    <Content Include="includes\css\iconFont.min.css" />
+    <Content Include="includes\css\metro-bootstrap-responsive.css" />
+    <Content Include="includes\css\metro-bootstrap.css" />
+    <Content Include="includes\css\Site.css" />
+    <Content Include="includes\fonts\iconFont.dev.svg" />
+    <Content Include="includes\fonts\iconFont.svg" />
+    <Content Include="includes\fonts\metroSysIcons.svg" />
+    <Content Include="includes\js\jquery\jquery-ui.min.js" />
+    <Content Include="includes\js\jquery\jquery.min.js" />
+    <Content Include="includes\js\metro\metro-accordion.js" />
+    <Content Include="includes\js\metro\metro-button-set.js" />
+    <Content Include="includes\js\metro\metro-calendar.js" />
+    <Content Include="includes\js\metro\metro-carousel.js" />
+    <Content Include="includes\js\metro\metro-core.js" />
+    <Content Include="includes\js\metro\metro-countdown.js" />
+    <Content Include="includes\js\metro\metro-date-format.js" />
+    <Content Include="includes\js\metro\metro-datepicker.js" />
+    <Content Include="includes\js\metro\metro-dialog.js" />
+    <Content Include="includes\js\metro\metro-drag-tile.js" />
+    <Content Include="includes\js\metro\metro-dropdown.js" />
+    <Content Include="includes\js\metro\metro-fluentmenu.js" />
+    <Content Include="includes\js\metro\metro-global.js" />
+    <Content Include="includes\js\metro\metro-hint.js" />
+    <Content Include="includes\js\metro\metro-initiator.js" />
+    <Content Include="includes\js\metro\metro-input-control.js" />
+    <Content Include="includes\js\metro\metro-listview.js" />
+    <Content Include="includes\js\metro\metro-live-tile.js" />
+    <Content Include="includes\js\metro\metro-loader.js" />
+    <Content Include="includes\js\metro\metro-locale.js" />
+    <Content Include="includes\js\metro\metro-notify.js" />
+    <Content Include="includes\js\metro\metro-panel.js" />
+    <Content Include="includes\js\metro\metro-plugin-template.js" />
+    <Content Include="includes\js\metro\metro-progressbar.js" />
+    <Content Include="includes\js\metro\metro-pull.js" />
+    <Content Include="includes\js\metro\metro-rating.js" />
+    <Content Include="includes\js\metro\metro-scroll.js" />
+    <Content Include="includes\js\metro\metro-slider.js" />
+    <Content Include="includes\js\metro\metro-stepper.js" />
+    <Content Include="includes\js\metro\metro-streamer.js" />
+    <Content Include="includes\js\metro\metro-tab-control.js" />
+    <Content Include="includes\js\metro\metro-table.js" />
+    <Content Include="includes\js\metro\metro-tile-transform.js" />
+    <Content Include="includes\js\metro\metro-times.js" />
+    <Content Include="includes\js\metro\metro-touch-handler.js" />
+    <Content Include="includes\js\metro\metro-treeview.js" />
+    <Content Include="includes\js\metro\metro-wizard.js" />
+    <Content Include="includes\js\metro\metro.min.js" />
+    <Content Include="MonStyle.css" />
+    <Content Include="Privée\GestionUtilisateur\GestionUtilisateur.aspx" />
+    <Content Include="Privée\CoordonateurStages\PageCoordonateurStagesDefault.aspx" />
+    <Content Include="Privée\Enseignant\PageEnseignantDefault.aspx" />
+    <Content Include="Privée\Entreprise\GestionEntreprise.aspx" />
+    <Content Include="Privée\Etudiant\PageEtudiantDefault.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connexion\Connexion.aspx.cs">
+      <DependentUpon>Connexion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Connexion\Connexion.aspx.designer.cs">
+      <DependentUpon>Connexion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonDataSet.cs">
+      <DependentUpon>MonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\Enseignant\InterfaceEnseignant.aspx.cs">
+      <DependentUpon>InterfaceEnseignant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\Enseignant\InterfaceEnseignant.aspx.designer.cs">
+      <DependentUpon>InterfaceEnseignant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\Entreprise\EvaluationStagiaire.aspx.cs">
+      <DependentUpon>EvaluationStagiaire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\Entreprise\EvaluationStagiaire.aspx.designer.cs">
+      <DependentUpon>EvaluationStagiaire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\Entreprise\EvaluationStagiaireSuperviseur.aspx.cs">
+      <DependentUpon>EvaluationStagiaireSuperviseur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\Entreprise\EvaluationStagiaireSuperviseur.aspx.designer.cs">
+      <DependentUpon>EvaluationStagiaireSuperviseur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\Entreprise\EvaluationStagiaireSuperviseurPR.aspx.cs">
+      <DependentUpon>EvaluationStagiaireSuperviseurPR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\Entreprise\EvaluationStagiaireSuperviseurPR.aspx.designer.cs">
+      <DependentUpon>EvaluationStagiaireSuperviseurPR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\Entreprise\GestionCriteres.aspx.cs">
+      <DependentUpon>GestionCriteres.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\Entreprise\GestionCriteres.aspx.designer.cs">
+      <DependentUpon>GestionCriteres.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\Entreprise\InterfaceEntreprise.aspx.cs">
+      <DependentUpon>InterfaceEntreprise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\Entreprise\InterfaceEntreprise.aspx.designer.cs">
+      <DependentUpon>InterfaceEntreprise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\Etudiant\InterfaceEtudiant.aspx.cs">
+      <DependentUpon>InterfaceEtudiant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\Etudiant\InterfaceEtudiant.aspx.designer.cs">
+      <DependentUpon>InterfaceEtudiant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\Stage\GestionStage.aspx.cs">
+      <DependentUpon>GestionStage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\Stage\GestionStage.aspx.designer.cs">
+      <DependentUpon>GestionStage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service\EnrcyptageService.cs" />
+    <Compile Include="Service\MailService.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\GestionUtilisateur\GestionUtilisateur.aspx.cs">
+      <DependentUpon>GestionUtilisateur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\GestionUtilisateur\GestionUtilisateur.aspx.designer.cs">
+      <DependentUpon>GestionUtilisateur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\CoordonateurStages\PageCoordonateurStagesDefault.aspx.cs">
+      <DependentUpon>PageCoordonateurStagesDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\CoordonateurStages\PageCoordonateurStagesDefault.aspx.designer.cs">
+      <DependentUpon>PageCoordonateurStagesDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\Enseignant\PageEnseignantDefault.aspx.cs">
+      <DependentUpon>PageEnseignantDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\Enseignant\PageEnseignantDefault.aspx.designer.cs">
+      <DependentUpon>PageEnseignantDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\Entreprise\GestionEntreprise.aspx.cs">
+      <DependentUpon>GestionEntreprise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\Entreprise\GestionEntreprise.aspx.designer.cs">
+      <DependentUpon>GestionEntreprise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privée\Etudiant\PageEtudiantDefault.aspx.cs">
+      <DependentUpon>PageEtudiantDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privée\Etudiant\PageEtudiantDefault.aspx.designer.cs">
+      <DependentUpon>PageEtudiantDefault.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+    <Content Include="includes\fonts\iconFont.eot" />
+    <Content Include="includes\fonts\iconFont.json" />
+    <Content Include="includes\fonts\iconFont.ttf" />
+    <Content Include="includes\fonts\iconFont.woff" />
+    <Content Include="includes\fonts\metroSysIcons.ttf" />
+    <Content Include="includes\fonts\metroSysIcons.woff" />
+    <Content Include="includes\fonts\OpenSans-Bold.woff" />
+    <Content Include="includes\fonts\OpenSans-Light.woff" />
+    <Content Include="includes\fonts\OpenSans.woff" />
+    <Content Include="includes\fonts\PTSerif-Caption.woff" />
+    <Content Include="MonDataSet.xsc">
+      <DependentUpon>MonDataSet.xsd</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="MonDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MonDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="MonDataSet.xss">
+      <DependentUpon>MonDataSet.xsd</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="image\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57920</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48247/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

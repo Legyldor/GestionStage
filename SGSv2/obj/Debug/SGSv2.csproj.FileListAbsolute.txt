@@ -1,0 +1,8 @@
+C:\Users\Joffrey\Dropbox\Année cegep de matane\Projet Web\H2015_ProjetWeb_Groupe101_Equipe4\SGSv2\trunk\SGSv2\bin\SGSv2.dll.config
+C:\Users\Joffrey\Dropbox\Année cegep de matane\Projet Web\H2015_ProjetWeb_Groupe101_Equipe4\SGSv2\trunk\SGSv2\bin\SGSv2.dll
+C:\Users\Joffrey\Dropbox\Année cegep de matane\Projet Web\H2015_ProjetWeb_Groupe101_Equipe4\SGSv2\trunk\SGSv2\bin\SGSv2.pdb
+C:\Users\Joffrey\Dropbox\Année cegep de matane\Projet Web\H2015_ProjetWeb_Groupe101_Equipe4\SGSv2\trunk\SGSv2\obj\Debug\SGSv2.csprojResolveAssemblyReference.cache
+C:\Users\Joffrey\Dropbox\Année cegep de matane\Projet Web\H2015_ProjetWeb_Groupe101_Equipe4\SGSv2\trunk\SGSv2\obj\Debug\SGSv2.Properties.Resources.resources
+C:\Users\Joffrey\Dropbox\Année cegep de matane\Projet Web\H2015_ProjetWeb_Groupe101_Equipe4\SGSv2\trunk\SGSv2\obj\Debug\SGSv2.csproj.GenerateResource.Cache
+C:\Users\Joffrey\Dropbox\Année cegep de matane\Projet Web\H2015_ProjetWeb_Groupe101_Equipe4\SGSv2\trunk\SGSv2\obj\Debug\SGSv2.dll
+C:\Users\Joffrey\Dropbox\Année cegep de matane\Projet Web\H2015_ProjetWeb_Groupe101_Equipe4\SGSv2\trunk\SGSv2\obj\Debug\SGSv2.pdb
